@@ -8,7 +8,6 @@ public class Main {
     final static double TAX_RATE = 0.15;
     static int totalItems;
     static Item[] items;
-    static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -82,21 +81,25 @@ public class Main {
 
     private static double getItemPrice(String m) {
         System.out.print(m);
+        Scanner scanner = new Scanner(System.in);
         return scanner.nextDouble();
     }
 
     private static String getItemNames(String m) {
         System.out.print(m);
+        Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
 
     private static int getItemQuantity(String m) {
         System.out.print(m);
+        Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
 
     private static int getNumberOfItems(String m) {
         System.out.print(m);
+        Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
 }
